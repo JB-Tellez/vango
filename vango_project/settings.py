@@ -162,3 +162,5 @@ COMPRESS_ENABLED = False
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+
+AUTH_USER_MODEL = "accounts.CustomUser"
