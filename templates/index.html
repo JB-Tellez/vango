@@ -1,3 +1,6 @@
+{% load compress %}
+{% load static %}
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,11 +9,16 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>VanGo</title>
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'src/output.css' %}">
+    {% endcompress %}
 </head>
-<body>
+<body class="bg-green-100">
 
 <h1>Hi There</h1>
 
 {{ name }}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
 </body>
 </html>
