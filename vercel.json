@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "vango_project/wsgi.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "vango_project/wsgi.py"
+        }
+    ]
+}
