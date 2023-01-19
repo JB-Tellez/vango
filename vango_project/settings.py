@@ -63,6 +63,7 @@ INSTALLED_APPS = [
     'environ',
 
     # local
+    'accounts',
     'vango_app',
 ]
 
@@ -161,4 +162,3 @@ COMPRESS_ENABLED = False
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
-
